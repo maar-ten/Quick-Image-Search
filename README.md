@@ -1,6 +1,5 @@
 Quick Image Search
 ===
----
 
 *initiate a secure search on Google Images from the context menu of your Chrome web browser*
 
