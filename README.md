@@ -1,3 +1,5 @@
+![Quick Image Search](http://imgur.com/rRrXTYY.png)
+
 Quick Image Search
 ===
 

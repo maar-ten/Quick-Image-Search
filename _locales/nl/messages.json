@@ -1,0 +1,14 @@
+{
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Quick Image Search"
+   },
+   "appDescription": {
+      "description": "A description what this application does, displayed in extensions menu",
+	  "message": "Rechtsklik op een afbeelding of op een geselecteerd stuk tekst en gebruik dat als input voor een beveiligde zoekopdracht in Google Images."
+   },
+   "search_in_google_images": {
+      "description": "The description of the application, displayed in the context menu.",
+      "message": "Zoek in Google Images"
+   }
+}
