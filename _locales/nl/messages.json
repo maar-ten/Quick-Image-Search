@@ -5,10 +5,10 @@
    },
    "appDescription": {
       "description": "A description what this application does, displayed in extensions menu",
-	  "message": "Rechtsklik op een afbeelding of op een geselecteerd stuk tekst en gebruik dat als input voor een beveiligde zoekopdracht in Google Images."
+	  "message": "Rechtsklik op een afbeelding of een geselecteerd stuk tekst en gebruik dat voor een beveiligde zoekopdracht in Google Afbeeldingen."
    },
    "search_in_google_images": {
       "description": "The description of the application, displayed in the context menu.",
-      "message": "Zoek in Google Images"
+      "message": "Zoek in Google Afbeeldingen"
    }
 }
