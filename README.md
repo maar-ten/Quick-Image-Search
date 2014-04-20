@@ -1,4 +1,4 @@
-![Quick Image Search](http://imgur.com/rRrXTYY.png)
+![Quick Image Search](http://i.imgur.com/ZDV1yzE.png)
 
 Quick Image Search
 ===
