@@ -11,32 +11,31 @@
 /**
  * Returns a handler which will open a new window when activated.
  */
-function getClickHandler() {
-    return function (info, tab) {
-        var selected, url = "https://encrypted.google.com/";
-        if (info.selectionText) {
-            selected = info.selectionText;
+function onClickHandler(info, tab) {
+    var selected, url = "https://encrypted.google.com/";
+    if (info.selectionText) {
+        selected = info.selectionText;
 
-            // Join multiple lines into one separated with comma
-            selected = selected.replace(/\n/g, ', ');
-            url += 'images?q=' + selected;
-        }
+        // Join multiple lines into one separated with comma
+        selected = selected.replace(/\n/g, ', ');
+        url += 'images?q=' + selected;
+    }
 
-        if (info.mediaType == "image") {
-            url += 'searchbyimage?image_url=' + info.srcUrl;
-        }
+    if (info.mediaType == "image") {
+        url += 'searchbyimage?image_url=' + info.srcUrl;
+    }
 
-        // Create a new tab to the info page.
-        chrome.tabs.create({url: url});
-    };
+    // Create a new tab to the info page.
+    chrome.tabs.create({url: url});
 }
 
 /**
  * Create a context menu which will only show up for images.
  */
 chrome.contextMenus.create({
+    "id":       "gis_button",
     "title":    chrome.i18n.getMessage("search_in_google_images"),
     "type":     "normal",
-    "contexts": ["selection", "image"],
-    "onclick":  getClickHandler()
+    "contexts": ["selection", "image"]
 });
+chrome.contextMenus.onClicked.addListener(onClickHandler);

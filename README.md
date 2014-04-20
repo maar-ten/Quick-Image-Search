@@ -10,6 +10,8 @@ Usage
 After installing this Chrome browser extension there'll be a new entry in your context menu (right-click menu) when an
 image or some selected text was right-clicked. Selecting this menu option will initiate a Google Image search via HTTPS.
 
+![Screenprint](http://imgur.com/GPNmGY3.png)
+
 Permissions
 ---
 This browser extension doesn't require any permissions
