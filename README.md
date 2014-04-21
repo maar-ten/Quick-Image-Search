@@ -18,8 +18,6 @@ This browser extension doesn't require any permissions
 
 Legal information
 ---
-The icon was designed by Yellowicon.com (taken from findicons.com, which said it was GNU/GPL licensed).
-
 The code for this extension was largely copied and modified from Cheng Lee's MapMe extension. I've left his copyright
 statement in the source files.
 
