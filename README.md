@@ -1,4 +1,4 @@
-![Quick Image Search](http://i.imgur.com/ZDV1yzE.png)
+![Quick Image Search](icon-128.png)
 
 Quick Image Search
 ===
@@ -10,7 +10,7 @@ Usage
 After installing this Chrome browser extension there'll be a new entry in your context menu (right-click menu) when an
 image or some selected text was right-clicked. Selecting this menu option will initiate a Google Image search via HTTPS.
 
-![Screenprint](http://imgur.com/GPNmGY3.png)
+![Screenprint](http://i.imgur.com/FZf2T69.png)
 
 Permissions
 ---

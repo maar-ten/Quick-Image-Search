@@ -9,54 +9,17 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="128"
+   height="128"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
+   inkscape:export-filename="E:\Desktop\icon-16.png"
+   inkscape:export-xdpi="11.25"
+   inkscape:export-ydpi="11.25"
    sodipodi:docname="New document 1">
   <defs
-     id="defs4">
-    <marker
-       inkscape:stockid="Arrow2Send"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="Arrow2Send"
-       style="overflow:visible;">
-      <path
-         id="path3814"
-         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
-         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
-    </marker>
-    <marker
-       inkscape:stockid="DotS"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="DotS"
-       style="overflow:visible">
-      <path
-         id="path3848"
-         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
-         transform="scale(0.2) translate(7.4, 1)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lstart"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="Arrow1Lstart"
-       style="overflow:visible">
-      <path
-         id="path3781"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
-         transform="scale(0.8) translate(12.5,0)" />
-    </marker>
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -64,59 +27,44 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="435.15266"
-     inkscape:cy="958.15769"
+     inkscape:zoom="2"
+     inkscape:cx="56.635566"
+     inkscape:cy="72.193527"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
+     borderlayer="true"
+     showborder="true"
+     inkscape:showpageshadow="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:snap-global="true"
-     inkscape:snap-bbox="true"
-     inkscape:bbox-paths="true"
-     inkscape:bbox-nodes="true"
-     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-grids="false"
+     inkscape:snap-to-guides="true"
+     inkscape:object-nodes="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1080"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
-       id="grid3759" />
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
     <sodipodi:guide
        orientation="-0.70710678,0.70710678"
-       position="405,1025"
-       id="guide5335" />
+       position="64,77"
+       id="guide2991" />
     <sodipodi:guide
        orientation="0,1"
-       position="295,1025"
-       id="guide5337" />
+       position="64,77"
+       id="guide2993" />
     <sodipodi:guide
        orientation="1,0"
-       position="295,1025"
-       id="guide5339" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="405,1025"
-       id="guide5341" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="405,885"
-       id="guide5343" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="370.96909,990.96909"
-       id="guide5345" />
-    <sodipodi:guide
-       orientation="0.70710678,0.70710678"
-       position="405,885"
-       id="guide5347" />
-    <sodipodi:guide
-       orientation="0.70710678,0.70710678"
-       position="370.96909,990.96909"
-       id="guide5367" />
+       position="23.446209,36.40238"
+       id="guide2998" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -133,12 +81,21 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-924.36218)">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:3.83173323000000020;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3781"
+       width="80.168266"
+       height="108.16827"
+       x="23.915867"
+       y="934.27802" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:none;marker-mid:none;marker-end:none"
-       d="M 330.65672,83.422459 C 322.42449,67.959084 349.31004,39.734038 370.96909,61.393093 391.6863,82.110299 362.73564,117.52168 335,97.362183 L 300.05076,132.31142 C 300.05076,92.311419 300,72.362183 300,32.362183 l 100,0 0,119.999997 -100,0"
-       id="path3767"
+       id="path2989"
+       style="fill:none;stroke:#000000;stroke-width:5.54166657;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 89.994945,45.079421 c 0.23228,9.662191 -7.412174,17.683245 -17.074366,17.915524 -9.662191,0.23228 -17.683245,-7.412174 -17.915524,-17.074366 -0.23228,-9.662191 7.412174,-17.683245 17.074366,-17.915524 4.640427,-0.111556 9.135073,1.625049 12.494979,4.827709 m 18.74244,-41.5654033 -64.1918,1.5356888 2.06584,86.3521335 64.1918,-1.535689 -1.55462,-64.983248 -19.25366,20.196518"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscccccc" />
+       sodipodi:nodetypes="csssccccccc"
+       transform="matrix(-1.2627966,-0.03021044,0.03021044,-1.2627966,154.17818,1035.0097)" />
   </g>
 </svg>
