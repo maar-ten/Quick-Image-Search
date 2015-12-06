@@ -1,4 +1,4 @@
-![Quick Image Search](icon-128.png)
+![Quick Image Search](icons/icon-128.png)
 
 Quick Image Search
 ===
