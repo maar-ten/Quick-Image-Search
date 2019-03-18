@@ -1,15 +1,14 @@
 /**
- * Copied and modified from Cheng Lee's MapMe extension. Here is his statement:
+ * Inspiration for this extension came from Cheng Lee's MapMe extension. Here is his statement:
  *
  * Copyright (c) 2012 Cheng Lee. All rights reserved.  Use of this
  * source code is governed by a BSD-style license that can be found in the
  * LICENSE file.
  *
- * Icon designed by Yellowicon.com (taken from findicons.com, which said it was GNU/GPL licensed)
  */
 
 /**
- * Returns a handler which will open a new window when activated.
+ * Analyse the click event, open a new tab and direct the user to the correct Google Images page.
  */
 function onClickHandler(info, tab) {
     var selected, url = "https://encrypted.google.com/";
@@ -21,7 +20,7 @@ function onClickHandler(info, tab) {
         url += 'images?q=' + selected;
     }
 
-    if (info.mediaType == "image") {
+    if (info.mediaType === "image") {
         url += 'searchbyimage?image_url=' + info.srcUrl;
     }
 
@@ -33,9 +32,9 @@ function onClickHandler(info, tab) {
  * Create a context menu which will only show up for images.
  */
 chrome.contextMenus.create({
-    "id":       "gis_button",
-    "title":    chrome.i18n.getMessage("search_in_google_images"),
-    "type":     "normal",
+    "id": "gis_button",
+    "title": chrome.i18n.getMessage("search_in_google_images"),
+    "type": "normal",
     "contexts": ["selection", "image"]
 });
 chrome.contextMenus.onClicked.addListener(onClickHandler);
