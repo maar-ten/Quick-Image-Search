@@ -11,7 +11,7 @@
  * Analyse the click event, open a new tab and direct the user to the correct Google Images page.
  */
 function onClickHandler(info, tab) {
-    var selected, url = "https://encrypted.google.com/";
+    var selected, url = "https://www.google.com/";
     if (info.selectionText) {
         selected = info.selectionText;
 
