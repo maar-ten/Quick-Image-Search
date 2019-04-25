@@ -27,6 +27,6 @@ This browser extension doesn't require any permissions
 
 Legal information
 ---
-The code for this extension was largely copied and modified from Cheng Lee's MapMe extension. I've left his copyright 
-statement in the source files.
+Some code for this extension was copied from Cheng Lee's MapMe extension and then modified. 
+I've left his copyright statement in the source files.
 
