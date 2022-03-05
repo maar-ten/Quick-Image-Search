@@ -25,8 +25,3 @@ Permissions
 This browser extension doesn't require any permissions
 
 
-Legal information
----
-Some code for this extension was copied from Cheng Lee's MapMe extension and then modified. 
-I've left his copyright statement in the source files.
-
