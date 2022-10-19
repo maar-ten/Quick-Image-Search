@@ -1,8 +1,8 @@
 {
-    "manifest_version":       2,
+    "manifest_version":       3,
     "name":                   "__MSG_appName__",
-    "version":                "2.0",
-    "minimum_chrome_version": "51",
+    "version":                "3.0",
+    "minimum_chrome_version": "88",
 
     "browser_specific_settings": {
         "gecko": {
@@ -20,7 +20,6 @@
         "48":  "icons/icon-48.png"
     },
     "background": {
-        "scripts":    ["scripts/eventPage.js"],
-        "persistent": false
+        "service_worker":    "service-worker.js"
     }
 }
