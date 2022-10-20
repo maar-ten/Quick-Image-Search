@@ -6,7 +6,7 @@ const searchByImageFn = url => `${BASE_URL}searchbyimage?image_url=${url}`;
  * Analyse the click event, open a new tab, and direct the user to the correct Google Images page.
  */
 function searchImagesFor(contextInfo) {
-    browser.tabs.create({
+    chrome.tabs.create({
         url: createUrl(contextInfo)
     });
 }
@@ -26,10 +26,10 @@ function createUrl({ selectionText, mediaType, srcUrl }) {
 /**
  * Create a context menu which will only show up for images and selected text.
  */
-browser.contextMenus.create({
+ chrome.contextMenus.create({
     id: 'gis_button',
-    title: browser.i18n.getMessage('search_in_google_images'),
+    title: chrome.i18n.getMessage('search_in_google_images'),
     type: 'normal',
     contexts: ['selection', 'image']
 });
-browser.contextMenus.onClicked.addListener(searchImagesFor);
+chrome.contextMenus.onClicked.addListener(searchImagesFor);
