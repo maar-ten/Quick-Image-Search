@@ -2,6 +2,8 @@ const BASE_URL = 'https://www.google.com/';
 const searchByTextFn = query => `${BASE_URL}images?q=${query}`;
 const searchByImageFn = url => `${BASE_URL}searchbyimage?image_url=${url}`;
 
+const browser = browser ?? chrome;
+
 /**
  * Analyse the click event, open a new tab, and direct the user to the correct Google Images page.
  */
