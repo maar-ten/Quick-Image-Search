@@ -24,12 +24,14 @@ function createUrl({ selectionText, mediaType, srcUrl }) {
 }
 
 /**
- * Create a context menu which will only show up for images and selected text.
+ * When bootstrapping the extension create a context menu which will only show up for images and selected text.
  */
- chrome.contextMenus.create({
-    id: 'gis_button',
-    title: chrome.i18n.getMessage('search_in_google_images'),
-    type: 'normal',
-    contexts: ['selection', 'image']
-});
+ chrome.runtime.onInstalled.addListener(() => {
+    chrome.contextMenus.create({
+        id: 'quick-image-search-button',
+        title: chrome.i18n.getMessage('search_in_google_images'),
+        type: 'normal',
+        contexts: ['selection', 'image']
+    });
+ });
 chrome.contextMenus.onClicked.addListener(searchImagesFor);
