@@ -1,6 +1,5 @@
-const BASE_URL = 'https://www.google.com/';
-const searchByTextFn = query => `${BASE_URL}images?q=${query}`;
-const searchByImageFn = url => `${BASE_URL}searchbyimage?image_url=${url}`;
+const searchByTextFn = query => `https://www.google.com/images?q=${query}`;
+const searchByImageFn = url => `https://lens.google.com/uploadbyurl?url=${url}`;
 
 /**
  * Analyse the click event, open a new tab, and direct the user to the correct Google Images page.
