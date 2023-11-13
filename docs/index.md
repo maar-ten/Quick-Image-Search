@@ -1,9 +1,5 @@
 ![Quick Image Search](icon.svg)
-
-Quick Image Search
-===
 Right click an image or some selected text and use that for a secure search using Google Images.
-
 
 Available from
 ---
@@ -11,14 +7,12 @@ Available from
 
 **[Chrome Web Store](https://chrome.google.com/webstore/detail/quick-image-search/ihbfgploaolhdcfohgmkgeelahfghngd)**
 
-
 Introduction
 ---
 After installing this extension there will be a new entry in the context menu (right-click menu) 
 when an image or some selected text is right-clicked. Selecting this menu option will start a secure Google Image search via HTTPS.
 
 ![Screenprint](http://i.imgur.com/FZf2T69.png)
-
 
 Permissions
 ---
