@@ -13,7 +13,7 @@ Introduction
 After installing this extension there will be a new entry in the context menu (right-click menu) 
 when an image or some selected text is right-clicked. Selecting this menu option will start a secure Google Image search via HTTPS.
 
-![Screenprint](http://i.imgur.com/FZf2T69.png)
+![Screenprint](https://i.imgur.com/01Jeu4c.png)
 
 Permissions
 ---
