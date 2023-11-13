@@ -1,4 +1,5 @@
 ![Quick Image Search](icon.svg)
+
 Right click an image or some selected text and use that for a secure search using Google Images.
 
 Available from
