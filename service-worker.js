@@ -2,11 +2,12 @@ const searchByTextFn = query => `https://www.google.com/images?q=${query}`;
 const searchByImageFn = url => `https://lens.google.com/uploadbyurl?url=${url}`;
 
 /**
- * Analyse the click event, open a new tab, and direct the user to the correct Google Images page.
+ * Analyse the click event, open a new tab to the rights of the current tab, and direct the user to the correct Google Images page.
  */
-function searchImagesFor(contextInfo) {
+function searchImagesFor(contextInfo, tab) {
     chrome.tabs.create({
-        url: createUrl(contextInfo)
+        url: createUrl(contextInfo),
+        index: tab.index + 1
     });
 }
 
