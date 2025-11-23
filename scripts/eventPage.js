@@ -4,9 +4,10 @@ const searchByImageFn = url => `https://lens.google.com/uploadbyurl?url=${url}`;
 /**
  * Analyse the click event, open a new tab, and direct the user to the correct Google Images page.
  */
-function searchImagesFor(contextInfo) {
+function searchImagesFor(contextInfo, tab) {
     browser.tabs.create({
-        url: createUrl(contextInfo)
+        url: createUrl(contextInfo),
+        index: tab.index + 1
     });
 }
 

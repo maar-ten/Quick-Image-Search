@@ -25,3 +25,8 @@ Permissions
 This browser extension doesn't require any permissions
 
 
+Release notes
+---
+- v4.0 (2025-11-23): Added user suggestion to open the results tab directly next to the active tab
+- v3.1 (2023-03-03): Fixed an issue that caused the extension to disappear from the context menu.
+- v3.0 (2022-12-11): Reverse image search now uses Google Lens. Google Images does not support reverse image search anymore.
