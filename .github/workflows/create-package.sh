@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # verify required parameters
-[[ "$BROWSER_NAME" -eq 0 ]] && { echo "Missing required parameter BROWSER_NAME" ; exit 1; }
+[[ x"${BROWSER_NAME}" == "x" ]] && { echo "Missing required parameter BROWSER_NAME" ; exit 1; }
 
 # get browser name from environment
 browserName=$BROWSER_NAME
