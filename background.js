@@ -1,15 +1,23 @@
 const searchByTextFn = query => `https://www.google.com/images?q=${query}`;
 const searchByImageFn = url => `https://lens.google.com/uploadbyurl?url=${url}`;
 
+if (typeof browser === "undefined") {
+  // Chrome does not support the browser namespace yet.
+  globalThis.browser = chrome;
+}
+
 /**
- * Analyse the click event, open a new tab, and direct the user to the correct Google Images page.
+ * Open a new tab and direct the user to the correct Google Images page.
  */
 function searchImagesFor(contextInfo) {
-    chrome.tabs.create({
+    browser.tabs.create({
         url: createUrl(contextInfo)
     });
 }
 
+/**
+ * Returns a different Google Images URL for text or images
+ */
 function createUrl({ selectionText, mediaType, srcUrl }) {
     if (selectionText) {
         // Join multiple lines into one line separated by spaces
@@ -25,12 +33,12 @@ function createUrl({ selectionText, mediaType, srcUrl }) {
 /**
  * When bootstrapping the extension create a context menu which will only show up for images and selected text.
  */
- chrome.runtime.onInstalled.addListener(() => {
-    chrome.contextMenus.create({
+ browser.runtime.onInstalled.addListener(() => {
+    browser.contextMenus.create({
         id: 'quick-image-search-button',
-        title: chrome.i18n.getMessage('search_in_google_images'),
+        title: browser.i18n.getMessage('search_in_google_images'),
         type: 'normal',
         contexts: ['selection', 'image']
     });
  });
-chrome.contextMenus.onClicked.addListener(searchImagesFor);
+browser.contextMenus.onClicked.addListener(searchImagesFor);
