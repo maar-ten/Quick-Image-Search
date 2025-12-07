@@ -1,6 +1,6 @@
 # This workflow creates brand specific packages for the supported web browsers.
 
-name: Create packages for Chromium and Firefox extension stores
+name: Create browser packages
 
 jobs:
   create-zip-files:
@@ -10,9 +10,11 @@ jobs:
       uses: actions/checkout@v5
 
     - name: Create chromium package
-      env: BROWSER_NAME: chromium
+      env: 
+        BROWSER_NAME: chromium
       run: sh ./create-package.sh
 
     - name: Create firefox package
-      env: BROWSER_NAME: firefox
+      env: 
+        BROWSER_NAME: firefox
       run: sh ./create-package.sh
