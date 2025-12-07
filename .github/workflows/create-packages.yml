@@ -2,7 +2,8 @@
 
 name: Create browser packages
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch
 
 jobs:
   create-zip-files:
@@ -14,9 +15,9 @@ jobs:
     - name: Create chromium package
       env: 
         BROWSER_NAME: chromium
-      run: sh ./create-package.sh
+      run: sh ./.github/workflows/create-package.sh
 
     - name: Create firefox package
       env: 
         BROWSER_NAME: firefox
-      run: sh ./create-package.sh
+      run: sh ./.github/workflows/create-package.sh
