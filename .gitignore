@@ -1,4 +1,2 @@
-.idea/
-*.iml
 *.zip
-.gitignore
+dist/
