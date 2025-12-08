@@ -26,34 +26,3 @@ jobs:
       env: 
         BROWSER_NAME: firefox
       run: sh ./.github/workflows/create-package.sh
-
-    - name: Create release
-      uses: actions/create-release@v1
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-          tag_name: ${{ inputs.version }}
-          release_name: Release ${{ inputs.version }}
-          id: create_release
-          draft: false
-          prerelease: false
-
-    - name: Add chromium package to release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./dist/chromium.zip
-        asset_name: chromium-${{ inputs.version }}.zip
-        asset_content_type: application/zip
-
-    - name: Add firefox package to release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./dist/firefox.zip
-        asset_name: firefox-${{ inputs.version }}.zip
-        asset_content_type: application/zip
