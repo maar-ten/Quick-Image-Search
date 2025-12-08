@@ -1,0 +1,37 @@
+# This workflow creates a draft release with brand specific packages for the supported web browsers.
+# See https://github.com/actions/create-release for background about the create and upload release steps
+
+name: Release new browser packages
+
+on: 
+  workflow_dispatch:
+    inputs:
+      version: 
+        description: Versions should start with the lowercase letter v
+        required: true
+        default: v5.1
+        type: string
+
+jobs:
+  create-zip-files:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v5
+
+    - name: Create chromium package
+      env: 
+        BROWSER_NAME: chromium
+      run: sh ./.github/workflows/create-zip-package.sh
+
+    - name: Create firefox package
+      env: 
+        BROWSER_NAME: firefox
+      run: sh ./.github/workflows/create-zip-package.sh
+
+    - name: Upload packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: zip-packages
+        path: ./dist/*.zip
+        if-no-files-found: error
