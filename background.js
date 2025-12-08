@@ -7,17 +7,15 @@ if (typeof browser === "undefined") {
 }
 
 /**
- * Open a new tab and direct the user to the correct Google Images page.
+ * Analyse the click event, open a new tab to the rights of the current tab, and direct the user to the correct Google Images page.
  */
-function searchImagesFor(contextInfo) {
+function searchImagesFor(contextInfo, tab) {
     browser.tabs.create({
-        url: createUrl(contextInfo)
+        url: createUrl(contextInfo),
+        index: tab.index + 1
     });
 }
 
-/**
- * Returns a different Google Images URL for text or images
- */
 function createUrl({ selectionText, mediaType, srcUrl }) {
     if (selectionText) {
         // Join multiple lines into one line separated by spaces
