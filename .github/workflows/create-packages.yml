@@ -1,0 +1,29 @@
+# This workflow creates brand specific packages for the supported web browsers.
+
+name: Create browser packages
+
+on: workflow_dispatch
+
+jobs:
+  create-packages:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v5
+
+    - name: Create package for chromium
+      env: 
+        BROWSER_NAME: chromium
+      run: sh ./.github/workflows/create-zip-package.sh
+
+    - name: Create package for firefox
+      env: 
+        BROWSER_NAME: firefox
+      run: sh ./.github/workflows/create-zip-package.sh
+
+    - name: Upload packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: extension-packages
+        path: ./dist/*.zip
+        if-no-files-found: error
