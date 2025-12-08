@@ -1,16 +1,8 @@
-# This workflow creates a draft release with brand specific packages for the supported web browsers.
-# See https://github.com/actions/create-release for background about the create and upload release steps
+# This workflow creates brand specific packages for the supported web browsers.
 
-name: Release new browser packages
+name: Create browser packages
 
-on: 
-  workflow_dispatch:
-    inputs:
-      version: 
-        description: Versions should start with the lowercase letter v
-        required: true
-        default: v5.1
-        type: string
+on: workflow_dispatch
 
 jobs:
   create-zip-files:
