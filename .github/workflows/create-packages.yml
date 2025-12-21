@@ -12,14 +12,10 @@ jobs:
       uses: actions/checkout@v5
 
     - name: Create package for chromium
-      env: 
-        BROWSER_NAME: chromium
-      run: sh ./.github/workflows/create-zip-package.sh
+      run: sh ./.github/workflows/create-zip-package.sh chromium
 
     - name: Create package for firefox
-      env: 
-        BROWSER_NAME: firefox
-      run: sh ./.github/workflows/create-zip-package.sh
+      run: sh ./.github/workflows/create-zip-package.sh firefox
 
     - name: Upload packages
       uses: actions/upload-artifact@v4

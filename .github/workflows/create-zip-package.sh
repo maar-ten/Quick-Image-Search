@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
 # verify required parameters
-[[ x"${BROWSER_NAME}" == "x" ]] && { echo "Missing required parameter BROWSER_NAME" ; exit 1; }
+if [ -z "$1" ]
+  then
+    echo "Missing required parameter. Specify either chromium or firefox"
+    exit 1
+fi
 
 # get browser name from environment
-browserName=$BROWSER_NAME
+browserName=$1
 
 # create output folder
 mkdir -p dist/$browserName
